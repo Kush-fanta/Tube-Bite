@@ -1,0 +1,26 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+motor==3.3.2
+pymongo==4.6.1
+cloudinary==1.37.0
+python-multipart==0.0.6
+pydantic==2.5.2
+python-dotenv==1.0.0
+firebase-admin>=6.2.0
+yt-dlp>=2023.11.16
+# IMPORTANT: install whisper with: pip install openai-whisper==20231117 --no-build-isolation
+# Regular pip install fails because openai-whisper uses legacy setup.py and
+# setuptools 80+ (PyPI default) no longer includes pkg_resources in build isolation envs.
+openai-whisper==20231117
+# numpy MUST be pinned to 1.26.x — openai-whisper depends on numba which
+# requires numpy <= 1.26. Do NOT upgrade numpy or numba will break whisper.
+numpy==1.26.4
+numba==0.59.1
+# OpenRouter LLM client (openai-python points to openrouter.ai base URL)
+openai>=1.12.0
+# YouTube transcript fetching (EN + HI, falls back to Whisper)
+# NOTE: v1.x has a different API than v0.6 — uses api.fetch() + to_raw_data()
+youtube-transcript-api>=1.0.0
+# HTTP client used by openai-python
+httpx>=0.25.0
+certifi>=2023.11.17

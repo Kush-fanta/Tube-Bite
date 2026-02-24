@@ -31,21 +31,14 @@ uvicorn main:app --reload --port 8000
 ---
 
 ## Screenshots
+Below are screenshots of the Tube Bite Web-app
+![Landing page](assets/01.png)
 
-Below are screenshots of the Tube Bite app in the same order as provided. Save the attached image files to `assets/screenshots/` with the exact filenames shown so the images render correctly in this README.
+![Sign In](assets/02.png)
 
-![Landing page](assets/screenshots/01.png)
+![Create Clips - Dashboard](assets/03.png)
 
-![Sign In](assets/screenshots/02.png)
+![Analysis Progress](assets/04.png)
 
-![Create Clips - Options](assets/screenshots/03.png)
+![Profile - Basic Info](assets/05.png)
 
-![Create Clips - Dashboard](assets/screenshots/04.png)
-
-![Analysis Progress](assets/screenshots/05.png)
-
-![Profile - Avatar Selection](assets/screenshots/06.png)
-
-![Profile - Basic Info](assets/screenshots/07.png)
-
-> Note: Create the folder `assets/screenshots/` in the project root and add the seven PNG files named `01.png` through `07.png` (in the order above) so the images display here.
